@@ -1,0 +1,15 @@
+# robots.txt for omaxeeternity2.in
+# Omaxe Eternity-2 Vrindavan - Authorized Channel Partner
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://omaxeeternity2.in/sitemap.xml
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
