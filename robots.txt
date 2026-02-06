@@ -3,13 +3,17 @@
 
 User-agent: *
 Allow: /
+Disallow: /assets/
 
 # Sitemap location
 Sitemap: https://omaxeeternity2.in/sitemap.xml
 
-# Allow all search engines to crawl the site
+# Googlebot specific rules
 User-agent: Googlebot
 Allow: /
+Disallow: /assets/
 
+# Bingbot specific rules
 User-agent: Bingbot
 Allow: /
+Disallow: /assets/
