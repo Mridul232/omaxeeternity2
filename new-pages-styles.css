@@ -1,0 +1,551 @@
+/* Additional CSS Styles for New SEO Pages */
+/* Append these styles to your existing styles.css file */
+
+/* ==================== NEW PAGE COMPONENTS ==================== */
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 90px 20px 20px;
+    background: var(--bg-light);
+}
+
+.breadcrumb a {
+    color: var(--primary);
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: var(--text-light);
+    margin: 0 8px;
+}
+
+/* Page Hero Sections */
+.page-hero {
+    padding: 100px 20px 60px;
+    background: var(--gradient-primary);
+    color: white;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ==================== ABOUT PAGE STYLES ==================== */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat-card {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 30px 20px;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.developer-content h3 {
+    color: var(--primary);
+    margin: 20px 0 15px;
+}
+
+.achievement-list {
+    list-style: none;
+}
+
+.achievement-list li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.achievement-list span {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.vision-card {
+    background: white;
+    padding: 35px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+}
+
+.vision-card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.why-card {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.why-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: var(--text-light);
+}
+
+/* ==================== AMENITIES PAGE STYLES ==================== */
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.amenity-card {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s;
+}
+
+.amenity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.amenity-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.amenity-card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.amenity-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.planned-facilities {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.facility-item {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: var(--radius);
+    margin-bottom: 15px;
+    box-shadow: var(--shadow-sm);
+}
+
+.facility-check {
+    color: var(--secondary);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.facility-item h4 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.facility-item p {
+    color: var(--text-light);
+}
+
+.infrastructure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.infra-card {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+}
+
+.infra-card h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.infra-card ul {
+    list-style: none;
+}
+
+.infra-card li {
+    padding: 8px 0;
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--bg-light);
+}
+
+.infra-card li:last-child {
+    border-bottom: none;
+}
+
+.why-amenities-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.why-item {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.why-number {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-gold);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.why-item h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.why-item p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* ==================== LOCATION PAGE STYLES ==================== */
+
+.location-overview-content p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.distance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.distance-card {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.distance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.distance-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.distance-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.distance-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.distance-card p {
+    color: var(--text-light);
+}
+
+.connectivity-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.connectivity-item {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+}
+
+.connectivity-item h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.connectivity-item ul {
+    list-style: none;
+}
+
+.connectivity-item li {
+    padding: 10px 0;
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+.nearby-places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.nearby-card {
+    background: white;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s;
+}
+
+.nearby-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.nearby-card h4 {
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.nearby-card .distance {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.nearby-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.facility-card {
+    background: white;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.facility-card h4 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.facility-card ul {
+    list-style: none;
+}
+
+.facility-card li {
+    padding: 8px 0;
+    color: var(--text-dark);
+}
+
+.why-location-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reason-item {
+    display: flex;
+    gap: 25px;
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 20px;
+}
+
+.reason-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.reason-item h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.reason-item p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.map-container {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+/* ==================== SHARED COMPONENTS ==================== */
+
+.cta-box {
+    background: white;
+    padding: 50px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+.cta-box h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.cta-box p {
+    color: var(--text-light);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+}
+
+/* Form Textarea */
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: var(--radius);
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.3s;
+}
+
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .connectivity-content {
+        grid-template-columns: 1fr;
+    }
+
+    .distance-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cta-box {
+        padding: 30px 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
