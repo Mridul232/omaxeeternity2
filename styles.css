@@ -947,6 +947,33 @@ button {
 @media (max-width: 992px) {
     .nav {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: var(--shadow-md);
+        gap: 0;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #e2e8f0;
+        width: 100%;
+    }
+
+    .nav a:last-child {
+        border-bottom: none;
+    }
+
+    .nav a:hover {
+        background: var(--bg-light);
     }
 
     .header-cta {
@@ -955,6 +982,9 @@ button {
 
     .mobile-menu-btn {
         display: block;
+        font-size: 28px;
+        padding: 5px 10px;
+        z-index: 1001;
     }
 
     .layout-grid,
