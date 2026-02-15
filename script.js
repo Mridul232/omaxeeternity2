@@ -1,3 +1,14 @@
+// Redirect .html URLs to clean URLs (SEO: single canonical URL)
+(function() {
+    var path = window.location.pathname;
+    if (path.endsWith('.html') && path !== '/index.html') {
+        var cleanPath = path.replace('.html', '');
+        window.location.replace(cleanPath + window.location.search + window.location.hash);
+    } else if (path === '/index.html') {
+        window.location.replace('/' + window.location.search + window.location.hash);
+    }
+})();
+
 // Smooth scroll for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
