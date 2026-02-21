@@ -1,5 +1,7 @@
 // Redirect .html URLs to clean URLs (SEO: single canonical URL)
+// Only run on live server — skip for local file:// access
 (function() {
+    if (window.location.protocol === 'file:') return; // Don't redirect local files
     var path = window.location.pathname;
     if (path.endsWith('.html') && path !== '/index.html') {
         var cleanPath = path.replace('.html', '');
