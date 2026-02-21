@@ -156,21 +156,108 @@ button {
 }
 
 .btn-whatsapp {
-    background: #25D366;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
     color: white;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.3px;
+}
+
+.btn-whatsapp::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+    border-radius: inherit;
+    pointer-events: none;
 }
 
 .btn-whatsapp:hover {
-    background: #128C7E;
+    background: linear-gradient(135deg, #20c05c 0%, #0f7a6e 100%);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5), 0 0 40px rgba(37, 211, 102, 0.2);
+    animation: pulse-green 2s ease-in-out infinite;
+}
+
+.btn-whatsapp:active {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.45);
 }
 
 .btn-call {
-    background: var(--accent);
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
     color: white;
+    box-shadow: 0 4px 15px rgba(197, 48, 48, 0.35);
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.3px;
+}
+
+.btn-call::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+    border-radius: inherit;
+    pointer-events: none;
 }
 
 .btn-call:hover {
-    background: #9b2c2c;
+    background: linear-gradient(135deg, #dd3333 0%, #b52828 100%);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 25px rgba(197, 48, 48, 0.45), 0 0 40px rgba(229, 62, 62, 0.2);
+    animation: ring-shake 0.6s ease-in-out;
+}
+
+.btn-call:active {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 4px 12px rgba(197, 48, 48, 0.4);
+}
+
+/* CTA Button Animations */
+@keyframes pulse-green {
+
+    0%,
+    100% {
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5), 0 0 40px rgba(37, 211, 102, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 8px 30px rgba(37, 211, 102, 0.65), 0 0 60px rgba(37, 211, 102, 0.3);
+    }
+}
+
+@keyframes ring-shake {
+    0% {
+        transform: translateY(-3px) scale(1.04) rotate(0deg);
+    }
+
+    15% {
+        transform: translateY(-3px) scale(1.04) rotate(5deg);
+    }
+
+    30% {
+        transform: translateY(-3px) scale(1.04) rotate(-5deg);
+    }
+
+    45% {
+        transform: translateY(-3px) scale(1.04) rotate(4deg);
+    }
+
+    60% {
+        transform: translateY(-3px) scale(1.04) rotate(-3deg);
+    }
+
+    75% {
+        transform: translateY(-3px) scale(1.04) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(-3px) scale(1.04) rotate(0deg);
+    }
 }
 
 .btn-outline {
@@ -897,17 +984,24 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    background: white;
-    padding: 12px 20px;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 14px 16px;
+    box-shadow: 0 -6px 30px rgba(0, 0, 0, 0.12), 0 -2px 8px rgba(0, 0, 0, 0.08);
     z-index: 999;
     gap: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .sticky-cta .btn {
     flex: 1;
     justify-content: center;
-    padding: 14px;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 14px;
+    letter-spacing: 0.5px;
 }
 
 /* Lightbox */
@@ -1423,7 +1517,9 @@ button {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-}/* Additional CSS Styles for New SEO Pages */
+}
+
+/* Additional CSS Styles for New SEO Pages */
 /* Append these styles to your existing styles.css file */
 
 /* ==================== NEW PAGE COMPONENTS ==================== */
@@ -1974,6 +2070,7 @@ button {
         justify-content: center;
     }
 }
+
 /* ==================== PRICING PAGE STYLES ==================== */
 
 .pricing-cards {
@@ -2438,7 +2535,7 @@ button {
     .showcase-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .showcase-item img {
         height: 200px;
     }
