@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,8 +8,6 @@
     <title>Omaxe Eternity 2 Vrindavan | Plots 120, 160, 200 Sq Yard | RERA Registered</title>
     <meta name="description"
         content="Buy RERA-registered residential plots in Vrindavan – Omaxe Eternity-2. Options: 120/160/200 sq. yard. UP RERA Reg: UPRERAPRJ141620. Get layout plan, price on request, and book a site visit. Contact Ashish Garg.">
-    <meta name="keywords"
-        content="plots in vrindavan, omaxe eternity 2, vrindavan plots, residential plots vrindavan, omaxe vrindavan, buy plot vrindavan, rera registered plots vrindavan">
     <meta name="author" content="Ashish Garg - Authorized Channel Partner">
     <meta name="robots" content="index, follow">
 
@@ -137,7 +135,7 @@
     <!-- Header -->
     <header class="header">
         <div class="header-container">
-            <a href="#" class="logo"><img src="assets/logo.png" alt="Omaxe"></a>
+            <a href="#" class="logo"><img src="assets/logo.webp" alt="Omaxe"></a>
             <nav class="nav">
                 <a href="about">About</a>
                 <a href="amenities">Amenities</a>
@@ -231,7 +229,7 @@
             </div>
             <div class="showcase-grid">
                 <div class="showcase-item">
-                    <img src="assets/entry gate.jpg" alt="Omaxe Eternity 2 Entrance Gate Vrindavan" loading="lazy"
+                    <img src="assets/entry gate.webp" alt="Omaxe Eternity 2 Entrance Gate Vrindavan" loading="lazy"
                         width="600" height="400">
                     <div class="showcase-caption">Grand Entrance Gate</div>
                 </div>
@@ -311,10 +309,14 @@
                         <a href="#booking" class="btn btn-whatsapp">📅 Book Site Visit</a>
                     </div>
                 </div>
-                <div class="layout-image">
-                    <img src="assets/layout-map-hd.webp" data-hd="assets/layout-map-hd.webp"
-                        alt="Omaxe Eternity-2 Vrindavan Layout Plan showing plot blocks, roads, parks and commercial zones"
-                        loading="lazy" decoding="async" width="1200" height="800">
+                <div class="layout-image" style="cursor: pointer;"
+                    onclick="document.querySelector('.layout-image img').click()">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="assets/layout-map-mobile.webp">
+                        <img src="assets/layout-map-hd.webp" data-hd="assets/layout-map-hd.webp"
+                            alt="Omaxe Eternity-2 Vrindavan Layout Plan showing plot blocks, roads, parks and commercial zones"
+                            width="1200" height="800" fetchpriority="high">
+                    </picture>
                     <div class="layout-overlay"><span class="zoom-icon">🔍</span></div>
                 </div>
             </div>
@@ -859,7 +861,7 @@
         <div class="footer-container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-logo"><img src="assets/logo.png" alt="Omaxe"></div>
+                    <div class="footer-logo"><img src="assets/logo.webp" alt="Omaxe"></div>
                     <p class="footer-desc">Your trusted partner for premium plots in Vrindavan. We help you find the
                         perfect investment for peaceful living and smart returns.</p>
                 </div>
