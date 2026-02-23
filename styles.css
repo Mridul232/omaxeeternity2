@@ -1,4 +1,4 @@
-/* Google Fonts */
+﻿/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 /* CSS Variables */
@@ -274,7 +274,7 @@ button {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, rgba(26, 54, 93, 0.9) 0%, rgba(44, 82, 130, 0.85) 100%), url('assets/layout-map-hd.jpg') center/cover;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.9) 0%, rgba(44, 82, 130, 0.85) 100%), url('assets/layout-map-hd.webp') center/cover;
     display: flex;
     align-items: center;
     padding: 120px 20px 80px;

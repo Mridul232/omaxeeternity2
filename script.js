@@ -1,4 +1,4 @@
-// Redirect .html URLs to clean URLs (SEO: single canonical URL)
+﻿// Redirect .html URLs to clean URLs (SEO: single canonical URL)
 // Only run on live server — skip for local file:// access
 (function() {
     if (window.location.protocol === 'file:') return; // Don't redirect local files
@@ -182,7 +182,7 @@ function getWhatsAppLink(plotSize = '') {
 // Download layout plan
 function downloadLayout() {
     const link = document.createElement('a');
-    link.href = 'assets/layout-map-hd.jpg';
+    link.href = 'assets/layout-map-hd.webp';
     link.download = 'Omaxe-Eternity-2-Vrindavan-Layout-Plan.jpg';
     document.body.appendChild(link);
     link.click();
