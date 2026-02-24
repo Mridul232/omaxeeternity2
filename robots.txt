@@ -1,5 +1,5 @@
 # robots.txt for omaxeeternity2.in
-# Omaxe Eternity-2 Vrindavan - Authorized Channel Partner
+# Omaxe Eternity 2 Vrindavan - Authorized Channel Partner
 
 User-agent: *
 Allow: /
