@@ -3,7 +3,9 @@
 
 User-agent: *
 Allow: /
-Disallow: /assets/
+# Allow assets so Google Images can crawl property photos (important for SEO)
+Allow: /assets/
+Allow: /blog/
 
 # Sitemap location
 Sitemap: https://omaxeeternity2.in/sitemap.xml
@@ -11,9 +13,9 @@ Sitemap: https://omaxeeternity2.in/sitemap.xml
 # Googlebot specific rules
 User-agent: Googlebot
 Allow: /
-Disallow: /assets/
+Allow: /assets/
 
 # Bingbot specific rules
 User-agent: Bingbot
 Allow: /
-Disallow: /assets/
+Allow: /assets/
