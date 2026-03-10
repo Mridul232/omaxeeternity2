@@ -114,6 +114,7 @@ button {
 .header-cta {
     display: flex;
     gap: 10px;
+    flex-shrink: 0;
 }
 
 .mobile-menu-btn {
@@ -134,6 +135,7 @@ button {
     font-size: 14px;
     transition: all 0.3s ease;
     border: none;
+    white-space: nowrap;
 }
 
 .btn-primary {
