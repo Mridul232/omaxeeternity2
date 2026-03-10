@@ -107,10 +107,20 @@ button {
     justify-content: space-between;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 45px;
+    height: 40px;
     width: auto;
-    aspect-ratio: 200 / 60;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.02);
 }
 
 .nav {
