@@ -90,6 +90,8 @@ button {
 
 .logo img {
     height: 45px;
+    width: auto;
+    aspect-ratio: 200 / 60;
 }
 
 .nav {
@@ -101,10 +103,12 @@ button {
     font-weight: 500;
     color: var(--text-dark);
     transition: color 0.3s;
+    text-underline-offset: 3px;
 }
 
 .nav a:hover {
     color: var(--secondary);
+    text-decoration: underline;
 }
 
 .header-cta {
@@ -949,10 +953,12 @@ button {
 .footer-links a {
     opacity: 0.8;
     transition: opacity 0.3s;
+    text-underline-offset: 3px;
 }
 
 .footer-links a:hover {
     opacity: 1;
+    text-decoration: underline;
 }
 
 .footer-bottom {

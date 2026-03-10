@@ -4,7 +4,7 @@
    come from the main styles.css
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+/* Merriweather font is loaded asynchronously via <link> in HTML head — no @import needed here */
 
 :root {
   --blog-primary: #1a3a5c;
@@ -254,6 +254,8 @@
 .read-more-link:hover {
   gap: 10px;
   color: var(--blog-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* ---- BLOG GRID ---- */
