@@ -6,7 +6,7 @@
     --secondary-light: #ecc94b;
     --accent: #c53030;
     --text-dark: #1a202c;
-    --text-light: #718096;
+    --text-light: #4a5568;
     --bg-light: #f7fafc;
     --bg-white: #ffffff;
     --gradient-primary: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
@@ -50,6 +50,25 @@ h4 {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p a,
+li a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 500;
+}
+
+/* Ensure buttons and navigation links don't inherit this inline underline */
+.nav a,
+.footer-links a,
+.btn {
+    text-decoration: none !important;
+}
+
+.nav a:hover,
+.footer-links a:hover {
+    text-decoration: underline !important;
 }
 
 img {
@@ -735,7 +754,7 @@ button {
     display: block;
 }
 
-.form-success h4 {
+.form-success h3 {
     color: #38a169;
     font-size: 1.5rem;
     margin-bottom: 15px;
