@@ -3,7 +3,6 @@
 
 User-agent: *
 Allow: /
-# Allow assets so Google Images can crawl property photos (important for SEO)
 Allow: /assets/
 Allow: /blog/
 
