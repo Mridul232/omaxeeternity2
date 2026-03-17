@@ -957,8 +957,8 @@ button {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 50px;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr 1fr;
+    gap: 30px;
     margin-bottom: 40px;
 }
 
@@ -1517,8 +1517,8 @@ button {
 /* Footer Grid Update for 4 columns */
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr 1fr;
+    gap: 30px;
     margin-bottom: 40px;
 }
 
