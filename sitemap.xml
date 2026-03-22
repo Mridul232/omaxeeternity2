@@ -3,7 +3,7 @@
     <!-- Homepage - Highest Priority -->
     <url>
         <loc>https://omaxeeternity2.in/</loc>
-        <lastmod>2026-03-07</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -129,6 +129,13 @@
         <lastmod>2026-03-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+    </url>
+    <!-- Society Shops new launch page – March 2026 -->
+    <url>
+        <loc>https://omaxeeternity2.in/blog/omaxe-eternity-2-society-shops-vrindavan</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
     </url>
     <!-- New Vrindavan SEO blog posts – March 2026 -->
     <url>
