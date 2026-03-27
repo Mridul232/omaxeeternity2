@@ -8,6 +8,14 @@
         <priority>1.0</priority>
     </url>
     
+    <!-- BeTogether Courtyard Commercial Project -->
+    <url>
+        <loc>https://omaxeeternity2.in/betogether-courtyard-vrindavan</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
     <!-- Key Landing Pages - High Priority -->
     <url>
         <loc>https://omaxeeternity2.in/about</loc>
