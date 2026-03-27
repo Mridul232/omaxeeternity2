@@ -6,7 +6,7 @@
     var style = document.createElement('style');
     style.textContent = `
         #annBar {
-            position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 9999 !important;
+            position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 9999 !important;
             background: linear-gradient(90deg, #0a1628 0%, #1a3a5c 50%, #0a1628 100%) !important;
             border-bottom: 1px solid rgba(246,201,14,0.35);
             display: flex !important; align-items: center; justify-content: center;
@@ -49,22 +49,30 @@
         '<button class="ann-close" id="annClose" title="Close">×</button>';
     document.body.insertBefore(bar, document.body.firstChild);
 
-    function pushHeader() {
+    function updateHeaderPos() {
         var h = document.querySelector('.header');
         var b = document.getElementById('annBar');
-        if (h && b) h.style.setProperty('top', b.offsetHeight + 'px', 'important');
+        if (h && b) {
+            var offset = Math.max(0, b.offsetHeight - window.scrollY);
+            h.style.setProperty('top', offset + 'px', 'important');
+        } else if (h) {
+            h.style.setProperty('top', '0px', 'important');
+        }
     }
-    pushHeader();
-    window.addEventListener('resize', pushHeader);
+    
+    // Initial call and event listeners
+    updateHeaderPos();
+    window.addEventListener('scroll', updateHeaderPos, { passive: true });
+    window.addEventListener('resize', updateHeaderPos, { passive: true });
 
     document.getElementById('annClose').addEventListener('click', function () {
         var b = document.getElementById('annBar');
         if (b) b.remove();
-        var h = document.querySelector('.header');
-        if (h) h.style.setProperty('top', '0px', 'important');
+        updateHeaderPos();
         sessionStorage.setItem('ann_bar_closed', '1');
     });
 })();
+
 
 // Smooth scroll for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
