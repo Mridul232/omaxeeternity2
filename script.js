@@ -1,35 +1,67 @@
 // ==================== ANNOUNCEMENT BAR (Sitewide) ====================
 (function () {
-    // Don't show if user dismissed it this session
     if (sessionStorage.getItem('ann_bar_closed')) return;
 
-    const bar = document.createElement('div');
-    bar.className = 'announcement-bar';
-    bar.id = 'annBar';
-    bar.innerHTML = `
-        <span class="ann-badge">🔥 New Launch</span>
-        <span class="ann-text">
-            <strong>BeTogether Courtyard, Vrindavan</strong> — Vrindavan's first mall: Shops, Food Court &amp; Cinema. RERA Registered.
-        </span>
-        <a href="/betogether-courtyard-vrindavan" class="ann-link">View Details →</a>
-        <button class="ann-close" id="annClose" title="Close">×</button>
+    // Inject styles directly – bypasses any CSS caching issues
+    var style = document.createElement('style');
+    style.textContent = `
+        #annBar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+            background: linear-gradient(90deg, #0a1628 0%, #1a3a5c 50%, #0a1628 100%);
+            border-bottom: 1px solid rgba(246,201,14,0.35);
+            display: flex; align-items: center; justify-content: center;
+            gap: 12px; padding: 9px 16px; font-family: 'Inter', sans-serif;
+            font-size: 13px; box-sizing: border-box;
+            animation: _annSlide .4s ease;
+        }
+        @keyframes _annSlide { from { transform:translateY(-100%); opacity:0; } to { transform:translateY(0); opacity:1; } }
+        #annBar .ann-badge {
+            background: linear-gradient(90deg,#d69e2e,#ecc94b); color: #1a3a5c;
+            font-size: 10px; font-weight: 800; letter-spacing: 1.5px;
+            text-transform: uppercase; padding: 3px 10px; border-radius: 20px;
+            white-space: nowrap; flex-shrink: 0;
+        }
+        #annBar .ann-text { color: rgba(255,255,255,0.9); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        #annBar .ann-text strong { color: #f6c90e; font-weight: 700; }
+        #annBar .ann-link {
+            background: rgba(246,201,14,0.12); border: 1px solid rgba(246,201,14,0.5);
+            color: #f6c90e !important; font-size: 12px; font-weight: 700;
+            padding: 4px 14px; border-radius: 20px; text-decoration: none !important;
+            white-space: nowrap; flex-shrink: 0; transition: background .2s;
+        }
+        #annBar .ann-link:hover { background: rgba(246,201,14,0.25); }
+        #annBar .ann-close {
+            background: none; border: none; color: rgba(255,255,255,0.55);
+            font-size: 20px; cursor: pointer; padding: 0 4px; line-height: 1;
+            flex-shrink: 0; margin-left: 4px; transition: color .2s;
+        }
+        #annBar .ann-close:hover { color: #fff; }
+        @media (max-width: 600px) { #annBar .ann-text { display: none; } #annBar { gap: 8px; } }
     `;
+    document.head.appendChild(style);
+
+    var bar = document.createElement('div');
+    bar.id = 'annBar';
+    bar.innerHTML =
+        '<span class="ann-badge">🔥 New Launch</span>' +
+        '<span class="ann-text"><strong>BeTogether Courtyard, Vrindavan</strong> — First mall: Shops, Food Court &amp; Cinema. RERA Registered.</span>' +
+        '<a href="/betogether-courtyard-vrindavan" class="ann-link">View Details →</a>' +
+        '<button class="ann-close" id="annClose" title="Close">×</button>';
     document.body.insertBefore(bar, document.body.firstChild);
 
-    function adjustHeader() {
-        const header = document.querySelector('.header');
-        if (!header) return;
-        const barEl = document.getElementById('annBar');
-        header.style.top = barEl ? barEl.offsetHeight + 'px' : '0px';
+    function pushHeader() {
+        var h = document.querySelector('.header');
+        var b = document.getElementById('annBar');
+        if (h && b) h.style.setProperty('top', b.offsetHeight + 'px', 'important');
     }
-    adjustHeader();
-    window.addEventListener('resize', adjustHeader);
+    pushHeader();
+    window.addEventListener('resize', pushHeader);
 
     document.getElementById('annClose').addEventListener('click', function () {
-        const barEl = document.getElementById('annBar');
-        if (barEl) barEl.remove();
-        const header = document.querySelector('.header');
-        if (header) { header.style.top = '0px'; header.classList.add('bar-hidden'); }
+        var b = document.getElementById('annBar');
+        if (b) b.remove();
+        var h = document.querySelector('.header');
+        if (h) h.style.setProperty('top', '0px', 'important');
         sessionStorage.setItem('ann_bar_closed', '1');
     });
 })();
