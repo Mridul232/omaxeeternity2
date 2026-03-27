@@ -404,10 +404,10 @@
         <section id="night-view"
             style="background:linear-gradient(135deg,#0a1628 0%,#0f2147 60%,#0a1628 100%);padding:0;overflow:hidden;">
             <div
-                style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;min-height:520px;align-items:stretch;">
+                style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 350px), 1fr));min-height:520px;align-items:stretch;">
 
                 <!-- Left: Text Content -->
-                <div style="padding:64px 48px;display:flex;flex-direction:column;justify-content:center;">
+                <div style="padding:clamp(40px, 8vw, 64px) clamp(24px, 5vw, 48px);display:flex;flex-direction:column;justify-content:center;">
                     <p
                         style="color:#f6c90e;font-size:0.78rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;margin:0 0 18px;">
                         ✦ Premium Township &bull; Vrindavan 2026</p>
@@ -452,7 +452,7 @@
 
                 <!-- Right: Full Building Image (no crop, no cover) -->
                 <div
-                    style="display:flex;align-items:flex-end;justify-content:center;padding:0;overflow:hidden;position:relative;background:#0a1628;">
+                    style="display:flex;align-items:flex-end;justify-content:center;padding:0;overflow:hidden;position:relative;background:#0a1628;min-height:300px;">
                     <!-- Subtle left fade to blend with text panel -->
                     <div
                         style="position:absolute;inset:0;left:0;width:80px;background:linear-gradient(to right,#0f2147,transparent);z-index:1;">
@@ -518,29 +518,29 @@
 
                 <!-- Stats row -->
                 <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-bottom:44px;">
-                    <div style="background:#fff;border:1px solid #fde68a;border-radius:14px;padding:20px 32px;text-align:center;box-shadow:0 2px 14px rgba(234,88,12,0.08);min-width:150px;">
-                        <div style="font-size:2rem;font-weight:900;color:#ea580c;line-height:1;">170–628</div>
-                        <div style="color:#92400e;font-size:0.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">sq. ft. sizes</div>
+                    <div style="background:#fff;border:1px solid #fde68a;border-radius:14px;padding:20px 16px;text-align:center;box-shadow:0 2px 14px rgba(234,88,12,0.08);min-width:150px;flex:1;">
+                        <div style="font-size:1.8rem;font-weight:900;color:#ea580c;line-height:1;">170–628</div>
+                        <div style="color:#92400e;font-size:0.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:4px;">sq. ft. sizes</div>
                     </div>
-                    <div style="background:#fff;border:1px solid #fde68a;border-radius:14px;padding:20px 32px;text-align:center;box-shadow:0 2px 14px rgba(234,88,12,0.08);min-width:150px;">
-                        <div style="font-size:2rem;font-weight:900;color:#dc2626;line-height:1;text-decoration:line-through;">26 Units</div>
-                        <div style="color:#991b1b;font-size:0.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">100% Sold Out</div>
+                    <div style="background:#fff;border:1px solid #fde68a;border-radius:14px;padding:20px 16px;text-align:center;box-shadow:0 2px 14px rgba(234,88,12,0.08);min-width:150px;flex:1;">
+                        <div style="font-size:1.8rem;font-weight:900;color:#dc2626;line-height:1;text-decoration:line-through;">26 Units</div>
+                        <div style="color:#991b1b;font-size:0.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:4px;">100% Sold Out</div>
                     </div>
-                    <div style="background:#fff;border:1px solid #fde68a;border-radius:14px;padding:20px 32px;text-align:center;box-shadow:0 2px 14px rgba(234,88,12,0.08);min-width:150px;">
-                        <div style="font-size:2rem;font-weight:900;color:#ea580c;line-height:1;">24m & 18m</div>
-                        <div style="color:#92400e;font-size:0.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;">Wide Roads</div>
+                    <div style="background:#fff;border:1px solid #fde68a;border-radius:14px;padding:20px 16px;text-align:center;box-shadow:0 2px 14px rgba(234,88,12,0.08);min-width:150px;flex:1;">
+                        <div style="font-size:1.8rem;font-weight:900;color:#ea580c;line-height:1;">24m & 18m</div>
+                        <div style="color:#92400e;font-size:0.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:4px;">Wide Roads</div>
                     </div>
-                    <div style="background:#fff;border:2px dashed #f6c90e;border-radius:14px;padding:20px 32px;text-align:center;box-shadow:0 2px 14px rgba(234,88,12,0.08);min-width:150px;">
+                    <div style="background:#fff;border:2px dashed #f6c90e;border-radius:14px;padding:20px 16px;text-align:center;box-shadow:0 2px 14px rgba(234,88,12,0.08);min-width:150px;flex:1;">
                         <div style="font-size:1.1rem;font-weight:800;color:#1a3a5c;line-height:1.3;">Floor Plan &<br>Price</div>
-                        <div style="color:#ea580c;font-size:0.8rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:4px;">On Request</div>
+                        <div style="color:#ea580c;font-size:0.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:4px;">On Request</div>
                     </div>
                 </div>
 
                 <!-- Details + USPs Grid -->
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:36px;">
+                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 320px), 1fr));gap:28px;margin-bottom:36px;">
 
                     <!-- Left: The Details -->
-                    <div style="background:#fff;border:1px solid #fde68a;border-radius:18px;padding:32px;box-shadow:0 4px 20px rgba(234,88,12,0.07);">
+                    <div style="background:#fff;border:1px solid #fde68a;border-radius:18px;padding:clamp(20px, 4vw, 32px);box-shadow:0 4px 20px rgba(234,88,12,0.07);">
                         <h3 style="color:#1a3a5c;font-size:0.9rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin:0 0 22px;display:flex;align-items:center;gap:8px;">
                             📋 The Details
                         </h3>
@@ -579,7 +579,7 @@
                     </div>
 
                     <!-- Right: Why Invest Here -->
-                    <div style="background:#fff;border:1px solid #fde68a;border-radius:18px;padding:32px;box-shadow:0 4px 20px rgba(234,88,12,0.07);">
+                    <div style="background:#fff;border:1px solid #fde68a;border-radius:18px;padding:clamp(20px, 4vw, 32px);box-shadow:0 4px 20px rgba(234,88,12,0.07);">
                         <h3 style="color:#1a3a5c;font-size:0.9rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin:0 0 22px;display:flex;align-items:center;gap:8px;">
                             💡 Why Invest Here?
                         </h3>
