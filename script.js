@@ -1,4 +1,40 @@
-﻿// Smooth scroll for navigation
+// ==================== ANNOUNCEMENT BAR (Sitewide) ====================
+(function () {
+    // Don't show if user dismissed it this session
+    if (sessionStorage.getItem('ann_bar_closed')) return;
+
+    const bar = document.createElement('div');
+    bar.className = 'announcement-bar';
+    bar.id = 'annBar';
+    bar.innerHTML = `
+        <span class="ann-badge">🔥 New Launch</span>
+        <span class="ann-text">
+            <strong>BeTogether Courtyard, Vrindavan</strong> — Vrindavan's first mall: Shops, Food Court &amp; Cinema. RERA Registered.
+        </span>
+        <a href="/betogether-courtyard-vrindavan" class="ann-link">View Details →</a>
+        <button class="ann-close" id="annClose" title="Close">×</button>
+    `;
+    document.body.insertBefore(bar, document.body.firstChild);
+
+    function adjustHeader() {
+        const header = document.querySelector('.header');
+        if (!header) return;
+        const barEl = document.getElementById('annBar');
+        header.style.top = barEl ? barEl.offsetHeight + 'px' : '0px';
+    }
+    adjustHeader();
+    window.addEventListener('resize', adjustHeader);
+
+    document.getElementById('annClose').addEventListener('click', function () {
+        const barEl = document.getElementById('annBar');
+        if (barEl) barEl.remove();
+        const header = document.querySelector('.header');
+        if (header) { header.style.top = '0px'; header.classList.add('bar-hidden'); }
+        sessionStorage.setItem('ann_bar_closed', '1');
+    });
+})();
+
+// Smooth scroll for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,6 +44,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
 
 // Header scroll effect
 const header = document.querySelector('.header');
