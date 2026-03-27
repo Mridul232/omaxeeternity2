@@ -6,10 +6,10 @@
     var style = document.createElement('style');
     style.textContent = `
         #annBar {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
-            background: linear-gradient(90deg, #0a1628 0%, #1a3a5c 50%, #0a1628 100%);
+            position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 9999 !important;
+            background: linear-gradient(90deg, #0a1628 0%, #1a3a5c 50%, #0a1628 100%) !important;
             border-bottom: 1px solid rgba(246,201,14,0.35);
-            display: flex; align-items: center; justify-content: center;
+            display: flex !important; align-items: center; justify-content: center;
             gap: 12px; padding: 9px 16px; font-family: 'Inter', sans-serif;
             font-size: 13px; box-sizing: border-box;
             animation: _annSlide .4s ease;
