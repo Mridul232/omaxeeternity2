@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting... | Omaxe Eternity 2 Vrindavan</title>
+    <meta name="robots" content="noindex">
+    <script>
+        // GitHub Pages clean URL handler
+        // This fixes the "Page with redirect" GSC error by handling
+        // requests to paths that GitHub Pages would normally 404
+        (function() {
+            var path = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+
+            // Map of clean URL paths to their HTML file equivalents
+            // GitHub Pages automatically serves .html files, but if
+            // someone/Googlebot hits a URL without .html, this redirects
+            var knownPaths = {
+                '/about': '/about.html',
+                '/amenities': '/amenities.html',
+                '/contact': '/contact.html',
+                '/gallery': '/gallery.html',
+                '/location': '/location.html',
+                '/plot-sizes': '/plot-sizes.html',
+                '/price-details': '/price-details.html',
+                '/privacy-policy': '/privacy-policy.html',
+                '/rera-legal': '/rera-legal.html',
+                '/terms': '/terms.html',
+                '/betogether-courtyard-vrindavan': '/betogether-courtyard-vrindavan.html',
+                '/blog/omaxe-eternity-2-complete-guide': '/blog/omaxe-eternity-2-complete-guide.html',
+                '/blog/why-invest-vrindavan-2026': '/blog/why-invest-vrindavan-2026.html',
+                '/blog/vrindavan-real-estate-appreciation': '/blog/vrindavan-real-estate-appreciation.html',
+                '/blog/living-in-vrindavan-spiritual-lifestyle': '/blog/living-in-vrindavan-spiritual-lifestyle.html',
+                '/blog/omaxe-eternity-2-vs-competitors': '/blog/omaxe-eternity-2-vs-competitors.html',
+                '/blog/omaxe-eternity-2-price-list-2026': '/blog/omaxe-eternity-2-price-list-2026.html',
+                '/blog/omaxe-eternity-2-vrindavan-review': '/blog/omaxe-eternity-2-vrindavan-review.html',
+                '/blog/omaxe-eternity-2-plot-booking-process': '/blog/omaxe-eternity-2-plot-booking-process.html',
+                '/blog/omaxe-eternity-2-society-shops-vrindavan': '/blog/omaxe-eternity-2-society-shops-vrindavan.html',
+                '/blog/plots-for-sale-in-vrindavan-2026': '/blog/plots-for-sale-in-vrindavan-2026.html',
+                '/blog/vrindavan-property-rates-2026': '/blog/vrindavan-property-rates-2026.html',
+                '/blog': '/blog/index.html'
+            };
+
+            // Handle /index -> redirect to root
+            if (path === '/index' || path === '/index.html') {
+                window.location.replace('/' + search + hash);
+                return;
+            }
+
+            // Remove trailing slash
+            var cleanPath = path.replace(/\/$/, '') || '/';
+
+            if (knownPaths[cleanPath]) {
+                // Use replace (not href) to avoid creating a redirect chain
+                window.location.replace(knownPaths[cleanPath] + search + hash);
+            } else {
+                // Unknown page - redirect to home
+                window.location.replace('/');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
