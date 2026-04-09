@@ -6,34 +6,8 @@ Allow: /
 Allow: /assets/
 Allow: /blog/
 
-# Disallow .html extension URLs to prevent duplicate content issues
-# Google should only crawl clean URLs (without .html)
-Disallow: /index.html
-Disallow: /about.html
-Disallow: /amenities.html
-Disallow: /contact.html
-Disallow: /gallery.html
-Disallow: /location.html
-Disallow: /plot-sizes.html
-Disallow: /price-details.html
-Disallow: /privacy-policy.html
-Disallow: /rera-legal.html
-Disallow: /terms.html
-Disallow: /betogether-courtyard-vrindavan.html
+# Do not disallow .html files; Google needs to crawl them to see canonical tags.
 Disallow: /index-redirect.html
-
-# Disallow blog .html extension URLs
-Disallow: /blog/omaxe-eternity-2-complete-guide.html
-Disallow: /blog/why-invest-vrindavan-2026.html
-Disallow: /blog/vrindavan-real-estate-appreciation.html
-Disallow: /blog/living-in-vrindavan-spiritual-lifestyle.html
-Disallow: /blog/omaxe-eternity-2-vs-competitors.html
-Disallow: /blog/omaxe-eternity-2-price-list-2026.html
-Disallow: /blog/omaxe-eternity-2-vrindavan-review.html
-Disallow: /blog/omaxe-eternity-2-plot-booking-process.html
-Disallow: /blog/omaxe-eternity-2-society-shops-vrindavan.html
-Disallow: /blog/plots-for-sale-in-vrindavan-2026.html
-Disallow: /blog/vrindavan-property-rates-2026.html
 
 # Disallow /index path (duplicate of homepage)
 Disallow: /index
