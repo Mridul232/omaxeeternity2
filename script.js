@@ -161,6 +161,9 @@ if (contactForm) {
         const city = formData.get('city') || 'Not provided';
         const plotSize = formData.get('plotSize');
 
+        // Create WhatsApp message with all details
+        const whatsappMsg = `Hi Ashish Garg, I'm ${name} from ${city}. I'm interested in ${plotSize} sq. yard plots in Vrindavan. Please share price and availability. My phone: ${phone}`;
+
         // Send to Google Sheets (if URL is configured)
         if (GOOGLE_SCRIPT_URL !== 'YOUR_GOOGLE_SCRIPT_URL') {
             try {
@@ -169,9 +172,13 @@ if (contactForm) {
                     mode: 'no-cors',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ name, phone, city, plotSize })
+                }).catch(() => {
+                    // Fallback to WhatsApp if network/fetch fails silently in promise
+                    window.open(`https://wa.me/919410856555?text=${encodeURIComponent(whatsappMsg)}`, '_blank');
                 });
             } catch (error) {
-                console.log('Form submitted locally');
+                console.log('Google script failed, redirecting to WhatsApp');
+                window.open(`https://wa.me/919410856555?text=${encodeURIComponent(whatsappMsg)}`, '_blank');
             }
         }
 
@@ -180,9 +187,6 @@ if (contactForm) {
             formContent.style.display = 'none';
             formSuccess.classList.add('show');
         }
-
-        // Create WhatsApp message with all details
-        const whatsappMsg = `Hi Ashish Garg, I'm ${name} from ${city}. I'm interested in ${plotSize} sq. yard plots in Vrindavan. Please share price and availability. My phone: ${phone}`;
 
         // Update WhatsApp link in success message
         const successWhatsApp = document.querySelector('.success-whatsapp');
@@ -201,6 +205,9 @@ if (quickForm) {
         const phone = document.getElementById('qphone').value;
         const message = document.getElementById('qmessage').value || 'General enquiry';
 
+        // Open WhatsApp with details (Primary fallback strategy)
+        const whatsappMsg = `Hi Ashish Garg, I'm ${name}. ${message}. My phone: ${phone}`;
+        
         // Send to Google Sheets
         if (GOOGLE_SCRIPT_URL !== 'YOUR_GOOGLE_SCRIPT_URL') {
             try {
@@ -209,14 +216,15 @@ if (quickForm) {
                     mode: 'no-cors',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ name, phone, city: message, plotSize: 'Quick Enquiry' })
+                }).catch(() => {
+                    // Safe handling if promise rejects
+                    console.log('Fetch rejected, WhatsApp handling the load');
                 });
             } catch (error) {
                 console.log('Form submitted locally');
             }
         }
 
-        // Open WhatsApp with details
-        const whatsappMsg = `Hi Ashish Garg, I'm ${name}. ${message}. My phone: ${phone}`;
         window.open(`https://wa.me/919410856555?text=${encodeURIComponent(whatsappMsg)}`, '_blank');
 
         // Reset form

@@ -1139,6 +1139,15 @@ button {
     letter-spacing: 0.5px;
 }
 
+@media (max-width: 768px) {
+    .sticky-cta {
+        display: flex;
+    }
+    .footer {
+        padding-bottom: 90px;
+    }
+}
+
 /* Lightbox */
 .lightbox {
     display: none;
