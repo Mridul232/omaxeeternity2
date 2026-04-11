@@ -3,3 +3,9 @@ OMAXE ETERNITY-2_LAYOUT PLAN_16.01.2026 copy_page-0001.jpg
 
 # Ignore guide file
 FORM_SETUP_GUIDE.md
+
+# Ignore AI system planning directory
+.planning/
+
+# Ignore local maintenance scripts
+*.ps1
