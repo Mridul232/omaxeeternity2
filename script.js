@@ -1,6 +1,6 @@
 // ==================== ANNOUNCEMENT BAR (Sitewide) ====================
 (function () {
-    if (sessionStorage.getItem('ann_bar_closed')) return;
+    // Bar shows on every visit — BeTogether Courtyard must always be visible
 
     // Inject styles directly – bypasses any CSS caching issues
     var style = document.createElement('style');
