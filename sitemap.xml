@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <!-- Homepage - Highest Priority -->
     <url>
         <loc>https://omaxeeternity2.in/</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    
+
     <!-- BeTogether Courtyard Commercial Project -->
     <url>
         <loc>https://omaxeeternity2.in/betogether-courtyard-vrindavan</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
@@ -19,55 +20,55 @@
     <!-- Key Landing Pages - High Priority -->
     <url>
         <loc>https://omaxeeternity2.in/about</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/amenities</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/location</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/plot-sizes</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/price-details</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.95</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/gallery</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/contact</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
+
     <!-- RERA & Legal - Important for Trust -->
     <url>
         <loc>https://omaxeeternity2.in/rera-legal</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
+
     <!-- Legal Pages - Lower Priority -->
     <url>
         <loc>https://omaxeeternity2.in/privacy-policy</loc>
@@ -85,77 +86,93 @@
     <!-- Blog Section - Fresh Content, High SEO Value -->
     <url>
         <loc>https://omaxeeternity2.in/blog</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/blog/omaxe-eternity-2-complete-guide</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/blog/why-invest-vrindavan-2026</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/blog/vrindavan-real-estate-appreciation</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/blog/living-in-vrindavan-spiritual-lifestyle</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/blog/omaxe-eternity-2-vs-competitors</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <!-- High-value blog articles – 2026 -->
     <url>
         <loc>https://omaxeeternity2.in/blog/omaxe-eternity-2-price-list-2026</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/blog/omaxe-eternity-2-vrindavan-review</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/blog/omaxe-eternity-2-plot-booking-process</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-    <!-- Society Shops page -->
     <url>
         <loc>https://omaxeeternity2.in/blog/omaxe-eternity-2-society-shops-vrindavan</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <priority>0.9</priority>
     </url>
-    <!-- Vrindavan market SEO posts -->
     <url>
         <loc>https://omaxeeternity2.in/blog/plots-for-sale-in-vrindavan-2026</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
         <loc>https://omaxeeternity2.in/blog/vrindavan-property-rates-2026</loc>
-        <lastmod>2026-03-30</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
+    </url>
+    <!-- New High-Value Blog Articles – April 2026 -->
+    <url>
+        <loc>https://omaxeeternity2.in/blog/omaxe-eternity-2-price-per-sq-yard-vrindavan</loc>
+        <lastmod>2026-04-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://omaxeeternity2.in/blog/plots-near-banke-bihari-temple-vrindavan</loc>
+        <lastmod>2026-04-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://omaxeeternity2.in/blog/omaxe-eternity-2-vrindavan-nri-investment-guide</loc>
+        <lastmod>2026-04-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
 </urlset>

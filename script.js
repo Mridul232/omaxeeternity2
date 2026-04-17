@@ -282,3 +282,83 @@ document.querySelectorAll('.highlight-card, .plot-card, .step-card, .testimonial
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
+
+// ==================== ROI CALCULATOR ====================
+(function() {
+    // Base index values (relative, not actual prices — drives inquiry)
+    const plotIndex = { '120': 1.0, '160': 1.35, '200': 1.68 };
+    // Conservative growth labels per year at 15% compound
+    function calcGrowth(base, years, rate) {
+        return (base * Math.pow(1 + rate, years));
+    }
+
+    function formatMultiplier(val) {
+        return val.toFixed(2) + '× current value';
+    }
+
+    function updateCalc() {
+        const radios = document.querySelectorAll('input[name="plotSize"]');
+        const slider = document.getElementById('holdingYears');
+        const yearsDisplay = document.getElementById('yearsDisplay');
+        const conservativeEl = document.getElementById('conservativeValue');
+        const optimisticEl = document.getElementById('optimisticValue');
+
+        if (!slider || !conservativeEl || !optimisticEl) return;
+
+        let selectedSize = '120';
+        radios.forEach(r => { if (r.checked) selectedSize = r.value; });
+
+        const years = parseInt(slider.value);
+        if (yearsDisplay) yearsDisplay.textContent = years;
+
+        const base = plotIndex[selectedSize] || 1.0;
+        const conservative = calcGrowth(base, years, 0.15);
+        const optimistic = calcGrowth(base, years, 0.20);
+
+        conservativeEl.textContent = formatMultiplier(conservative / base);
+        optimisticEl.textContent = formatMultiplier(optimistic / base);
+
+        // Update slider gradient
+        const pct = ((years - 1) / 9) * 100;
+        slider.style.background = `linear-gradient(to right, #1a3a5c ${pct}%, #ddd ${pct}%)`;
+
+        // Style radio labels
+        const labels = ['calc-120-label', 'calc-160-label', 'calc-200-label'];
+        labels.forEach(id => {
+            const lbl = document.getElementById(id);
+            if (!lbl) return;
+            const val = lbl.querySelector('input') && lbl.querySelector('input').value;
+            if (val === selectedSize) {
+                lbl.style.background = '#1a3a5c'; lbl.style.color = '#fff'; lbl.style.borderColor = '#1a3a5c';
+            } else {
+                lbl.style.background = '#fff'; lbl.style.color = '#333'; lbl.style.borderColor = '#ddd';
+            }
+        });
+
+        // Update WhatsApp link with plot size context
+        const waLink = document.getElementById('calcWhatsapp');
+        if (waLink) {
+            waLink.href = `https://wa.me/919410856555?text=Hi%20Ashish%20Garg%2C%20I%20used%20your%20ROI%20Calculator%20for%20a%20${selectedSize}%20sq.%20yard%20plot%20over%20${years}%20years.%20Please%20share%20the%20current%20price.`;
+        }
+    }
+
+    // Init
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(updateCalc, 200);
+        
+        const slider = document.getElementById('holdingYears');
+        if (slider) slider.addEventListener('input', updateCalc);
+
+        document.querySelectorAll('input[name="plotSize"]').forEach(r => {
+            r.addEventListener('change', updateCalc);
+        });
+
+        // Radio label click also registers
+        ['calc-120-label','calc-160-label','calc-200-label'].forEach(id => {
+            const lbl = document.getElementById(id);
+            if (lbl) lbl.addEventListener('click', function() {
+                setTimeout(updateCalc, 50);
+            });
+        });
+    });
+})();
