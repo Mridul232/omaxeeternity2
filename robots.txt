@@ -6,11 +6,37 @@ Allow: /
 Allow: /assets/
 Allow: /blog/
 
-# Do not disallow .html files; Google needs to crawl them to see canonical tags.
+# Disallow .html extension URLs - use canonical clean URLs only
+Disallow: /index.html
+Disallow: /index
+Disallow: /about.html
+Disallow: /amenities.html
+Disallow: /location.html
+Disallow: /plot-sizes.html
+Disallow: /price-details.html
+Disallow: /gallery.html
+Disallow: /contact.html
+Disallow: /rera-legal.html
+Disallow: /privacy-policy.html
+Disallow: /terms.html
 Disallow: /index-redirect.html
 
-# Disallow /index path (duplicate of homepage)
-Disallow: /index
+# Disallow blog .html extensions (canonical clean URL versions are indexed)
+Disallow: /blog/index.html
+Disallow: /blog/omaxe-eternity-2-complete-guide.html
+Disallow: /blog/why-invest-vrindavan-2026.html
+Disallow: /blog/vrindavan-real-estate-appreciation.html
+Disallow: /blog/living-in-vrindavan-spiritual-lifestyle.html
+Disallow: /blog/omaxe-eternity-2-vs-competitors.html
+Disallow: /blog/omaxe-eternity-2-price-list-2026.html
+Disallow: /blog/omaxe-eternity-2-vrindavan-review.html
+Disallow: /blog/omaxe-eternity-2-plot-booking-process.html
+Disallow: /blog/omaxe-eternity-2-society-shops-vrindavan.html
+Disallow: /blog/plots-for-sale-in-vrindavan-2026.html
+Disallow: /blog/vrindavan-property-rates-2026.html
+Disallow: /blog/omaxe-eternity-2-price-per-sq-yard-vrindavan.html
+Disallow: /blog/plots-near-banke-bihari-temple-vrindavan.html
+Disallow: /blog/omaxe-eternity-2-vrindavan-nri-investment-guide.html
 
 # Sitemap location
 Sitemap: https://omaxeeternity2.in/sitemap.xml
@@ -19,8 +45,7 @@ Sitemap: https://omaxeeternity2.in/sitemap.xml
 User-agent: Googlebot
 Allow: /
 Allow: /assets/
-
-# Bingbot specific rules
-User-agent: Bingbot
-Allow: /
-Allow: /assets/
+Allow: /blog/
+Disallow: /index.html
+Disallow: /index
+Disallow: /index-redirect.html

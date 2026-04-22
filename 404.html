@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting... | Omaxe Eternity 2 Vrindavan</title>
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex, nofollow">
     <script>
-        // SEO-Friendly URL Handler
-        // Resolves GSC "Page with redirect" loops by dropping .html extensions
+        // SEO-Friendly URL Handler for GitHub Pages
+        // Handles clean URL routing WITHOUT causing redirect loops
         (function() {
             var path = window.location.pathname;
             var search = window.location.search;
@@ -16,25 +16,29 @@
             // Normalize path by removing trailing slashes
             var cleanPath = path.replace(/\/$/, '');
 
-            // Handle /index or /index.html -> redirect to root
+            // Handle /index or /index.html -> redirect to root /
             if (cleanPath === '/index' || cleanPath === '/index.html') {
                 window.location.replace('/' + search + hash);
                 return;
             }
 
             // If the URL ends with .html, strip it to enforce clean paths
+            // This handles cases where Google or users land on .html URLs
             if (cleanPath.endsWith('.html')) {
                 var newPath = cleanPath.slice(0, -5); // remove '.html'
                 window.location.replace(newPath + search + hash);
                 return;
             }
 
-            // For all other generic 404s, redirect to home page gracefully
-            window.location.replace('/');
+            // For blog clean URLs: /blog/post-name -> try serving as /blog/post-name.html
+            // We cannot do server-side rewrites on GitHub Pages, so for unknown paths
+            // the best we can do is show a helpful redirect to the homepage
+            // The 404 here means the file truly doesn't exist
+            window.location.replace('/' + search + hash);
         })();
     </script>
 </head>
 <body>
-    <p>Redirecting...</p>
+    <p>Redirecting to the correct page...</p>
 </body>
 </html>
