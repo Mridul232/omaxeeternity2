@@ -334,10 +334,9 @@
     </header>
 
     <main id="main-content">
-
-        <!-- Hero Section -->
         <section class="hero" id="home">
-            <div class="hero-container">
+            <div class="hero-container hero-container-split">
+                <!-- Left: Text Content -->
                 <div class="hero-content">
                     <div class="hero-badge">🏡 RERA Registered Plots in Vrindavan | Raal Road &nbsp;•&nbsp; <span style="color:#f6c90e;font-weight:700;">📊 Limited Plots Available – Call for Price</span></div>
                     <h1>Omaxe Eternity 2 <span class="hero-highlight">Vrindavan</span> – RERA Registered Plots for Sale
@@ -349,13 +348,58 @@
                             style="color:inherit;text-decoration:underline dotted;text-underline-offset:3px;">Get 2026 price list</a> &amp; book your site visit today.</p>
                     <div class="hero-ctas">
                         <a href="https://wa.me/919410856555?text=Hi%20Ashish%20Garg%2C%20I'm%20interested%20in%20plots%20in%20Vrindavan.%20Please%20share%20price%20and%20layout%20plan."
-                            class="btn btn-whatsapp">💬 Get Price & Layout on WhatsApp</a>
+                            class="btn btn-whatsapp">💬 Get Price &amp; Layout on WhatsApp</a>
                         <a href="tel:+919410856555" class="btn btn-call">📞 Call Now</a>
                     </div>
                     <div class="hero-trust">
                         <span>✅ Limited Plots</span>
                         <span>🚗 Site Visit Available</span>
                         <span>⚡ Quick Assistance</span>
+                    </div>
+                </div>
+
+                <!-- Right: Hero Lead Form -->
+                <div class="hero-lead-form-wrap">
+                    <div class="hero-lead-form-box">
+                        <div class="hero-lead-form-header">
+                            <span class="hero-lead-form-tag">📋 FREE Price List &amp; Brochure</span>
+                            <h3 class="hero-lead-form-title">Get Exclusive 2026 Offer</h3>
+                            <p class="hero-lead-form-sub">Fill below – we call back in 30 minutes</p>
+                        </div>
+                        <form id="heroLeadForm" class="hero-lead-form" novalidate>
+                            <div class="hlf-group">
+                                <input type="text" id="hlf-name" name="name" placeholder="Your Full Name *" required autocomplete="name">
+                            </div>
+                            <div class="hlf-group">
+                                <input type="tel" id="hlf-phone" name="phone" placeholder="Phone / WhatsApp Number *" required autocomplete="tel" pattern="[6-9][0-9]{9}">
+                            </div>
+                            <div class="hlf-group">
+                                <select id="hlf-plot" name="plotSize">
+                                    <option value="">Plot Size (Optional)</option>
+                                    <option value="120 Sq. Yard">120 Sq. Yard</option>
+                                    <option value="160 Sq. Yard">160 Sq. Yard</option>
+                                    <option value="200 Sq. Yard">200 Sq. Yard</option>
+                                    <option value="Not decided">Not Decided Yet</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="hlf-submit" id="hlf-submit-btn">
+                                🔓 Get Price List &amp; Call Back →
+                            </button>
+                        </form>
+                        <div id="heroLeadSuccess" class="hlf-success" style="display:none;">
+                            <div class="hlf-success-icon">✅</div>
+                            <h4>Thank You!</h4>
+                            <p>We'll call you within 30 minutes.<br>For instant help:</p>
+                            <a href="https://wa.me/919410856555?text=Hi%20Ashish%20Garg%2C%20I%20just%20submitted%20my%20details%20for%20Omaxe%20Eternity%202%20plots.%20Please%20share%20the%20price%20list." class="btn btn-whatsapp" style="width:100%;justify-content:center;margin-top:8px;">💬 Chat on WhatsApp Now</a>
+                        </div>
+                        <p class="hlf-privacy">🔒 100% Private. No spam ever.</p>
+                        <div class="hlf-trust-row">
+                            <span>⭐ 4.9/5 Rating</span>
+                            <span>•</span>
+                            <span>47 Happy Investors</span>
+                            <span>•</span>
+                            <span>RERA ✅</span>
+                        </div>
                     </div>
                 </div>
             </div>

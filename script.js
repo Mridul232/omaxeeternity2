@@ -362,3 +362,55 @@ document.querySelectorAll('.highlight-card, .plot-card, .step-card, .testimonial
         });
     });
 })();
+
+// ==================== HERO LEAD FORM ====================
+(function () {
+    const heroForm = document.getElementById('heroLeadForm');
+    const heroSuccess = document.getElementById('heroLeadSuccess');
+
+    if (!heroForm) return;
+
+    heroForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = (document.getElementById('hlf-name').value || '').trim();
+        const phone = (document.getElementById('hlf-phone').value || '').trim();
+        const plotSize = (document.getElementById('hlf-plot').value || 'Not selected').trim();
+
+        // Basic validation
+        if (!name || name.length < 2) {
+            document.getElementById('hlf-name').focus();
+            return;
+        }
+        if (!phone || phone.length < 10) {
+            document.getElementById('hlf-phone').focus();
+            return;
+        }
+
+        // Disable button to prevent double-submit
+        const btn = document.getElementById('hlf-submit-btn');
+        if (btn) { btn.disabled = true; btn.textContent = 'Submitting…'; }
+
+        // Build WhatsApp message
+        const waMsg = `Hi Ashish Garg, my name is ${name}. I'm interested in ${plotSize} plots in Omaxe Eternity 2, Vrindavan. Please share the 2026 price list. My number: ${phone}`;
+
+        // Send to Google Sheets (same endpoint)
+        if (typeof GOOGLE_SCRIPT_URL !== 'undefined' && GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== 'YOUR_GOOGLE_SCRIPT_URL') {
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, phone, city: 'Hero Form', plotSize, source: 'hero-form' })
+            }).catch(() => {});
+        }
+
+        // Show success state
+        heroForm.style.display = 'none';
+        if (heroSuccess) heroSuccess.style.display = 'block';
+
+        // Open WhatsApp in new tab after short delay
+        setTimeout(function () {
+            window.open('https://wa.me/919410856555?text=' + encodeURIComponent(waMsg), '_blank');
+        }, 800);
+    });
+})();
