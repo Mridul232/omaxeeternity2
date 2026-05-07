@@ -23,18 +23,49 @@
             }
 
             // If the URL ends with .html, strip it to enforce clean paths
-            // This handles cases where Google or users land on .html URLs
             if (cleanPath.endsWith('.html')) {
-                var newPath = cleanPath.slice(0, -5); // remove '.html'
+                var newPath = cleanPath.slice(0, -5);
                 window.location.replace(newPath + search + hash);
                 return;
             }
 
-            // For blog clean URLs: /blog/post-name -> try serving as /blog/post-name.html
-            // We cannot do server-side rewrites on GitHub Pages, so for unknown paths
-            // the best we can do is show a helpful redirect to the homepage
-            // The 404 here means the file truly doesn't exist
-            window.location.replace('/' + search + hash);
+            // Known pages mapping - redirect clean URL to actual .html file
+            var knownPages = {
+                '/about': '/about.html',
+                '/amenities': '/amenities.html',
+                '/location': '/location.html',
+                '/plot-sizes': '/plot-sizes.html',
+                '/price-details': '/price-details.html',
+                '/gallery': '/gallery.html',
+                '/contact': '/contact.html',
+                '/rera-legal': '/rera-legal.html',
+                '/privacy-policy': '/privacy-policy.html',
+                '/terms': '/terms.html',
+                '/betogether-courtyard-vrindavan': '/betogether-courtyard-vrindavan.html',
+                '/blog': '/blog/index.html',
+                '/blog/omaxe-eternity-2-complete-guide': '/blog/omaxe-eternity-2-complete-guide.html',
+                '/blog/why-invest-vrindavan-2026': '/blog/why-invest-vrindavan-2026.html',
+                '/blog/vrindavan-real-estate-appreciation': '/blog/vrindavan-real-estate-appreciation.html',
+                '/blog/living-in-vrindavan-spiritual-lifestyle': '/blog/living-in-vrindavan-spiritual-lifestyle.html',
+                '/blog/omaxe-eternity-2-vs-competitors': '/blog/omaxe-eternity-2-vs-competitors.html',
+                '/blog/omaxe-eternity-2-price-list-2026': '/blog/omaxe-eternity-2-price-list-2026.html',
+                '/blog/omaxe-eternity-2-vrindavan-review': '/blog/omaxe-eternity-2-vrindavan-review.html',
+                '/blog/omaxe-eternity-2-plot-booking-process': '/blog/omaxe-eternity-2-plot-booking-process.html',
+                '/blog/omaxe-eternity-2-society-shops-vrindavan': '/blog/omaxe-eternity-2-society-shops-vrindavan.html',
+                '/blog/plots-for-sale-in-vrindavan-2026': '/blog/plots-for-sale-in-vrindavan-2026.html',
+                '/blog/vrindavan-property-rates-2026': '/blog/vrindavan-property-rates-2026.html',
+                '/blog/omaxe-eternity-2-price-per-sq-yard-vrindavan': '/blog/omaxe-eternity-2-price-per-sq-yard-vrindavan.html',
+                '/blog/plots-near-banke-bihari-temple-vrindavan': '/blog/plots-near-banke-bihari-temple-vrindavan.html',
+                '/blog/omaxe-eternity-2-vrindavan-nri-investment-guide': '/blog/omaxe-eternity-2-vrindavan-nri-investment-guide.html'
+            };
+
+            if (knownPages[cleanPath]) {
+                window.location.replace(knownPages[cleanPath] + search + hash);
+                return;
+            }
+
+            // Unknown path — go to homepage
+            window.location.replace('/');
         })();
     </script>
 </head>
