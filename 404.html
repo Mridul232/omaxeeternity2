@@ -13,19 +13,32 @@
             var search = window.location.search;
             var hash = window.location.hash;
 
-            // Normalize path by removing trailing slashes
-            var cleanPath = path.replace(/\/$/, '');
+            // Normalize path by removing trailing slashes (but not the root /)
+            var cleanPath = path.length > 1 ? path.replace(/\/$/, '') : path;
 
             // Handle /index or /index.html -> redirect to root /
-            if (cleanPath === '/index' || cleanPath === '/index.html') {
+            if (cleanPath === '/index' || cleanPath === '/index.html' || cleanPath === '/Index' || cleanPath === '/Index.html') {
                 window.location.replace('/' + search + hash);
                 return;
             }
 
             // If the URL ends with .html, strip it to enforce clean paths
+            // This handles /amenities.html -> /amenities, /contact.html -> /contact, etc.
             if (cleanPath.endsWith('.html')) {
                 var newPath = cleanPath.slice(0, -5);
+                // If it's a blog post, we need to map it differently
+                // e.g. /blog/post-name.html -> the file exists so GitHub Pages should serve it
+                // But if someone hits /amenities.html, GitHub Pages redirects to /amenities
+                // and then 404 hits because the file IS called amenities.html
+                // So strip .html and check known pages
+                if (newPath === '') newPath = '/';
                 window.location.replace(newPath + search + hash);
+                return;
+            }
+
+            // Handle /blog with no trailing slash -> redirect to /blog/
+            if (cleanPath === '/blog') {
+                window.location.replace('/blog/' + search + hash);
                 return;
             }
 
@@ -42,7 +55,6 @@
                 '/privacy-policy': '/privacy-policy.html',
                 '/terms': '/terms.html',
                 '/betogether-courtyard-vrindavan': '/betogether-courtyard-vrindavan.html',
-                '/blog': '/blog/index.html',
                 '/blog/omaxe-eternity-2-complete-guide': '/blog/omaxe-eternity-2-complete-guide.html',
                 '/blog/why-invest-vrindavan-2026': '/blog/why-invest-vrindavan-2026.html',
                 '/blog/vrindavan-real-estate-appreciation': '/blog/vrindavan-real-estate-appreciation.html',

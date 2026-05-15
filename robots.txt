@@ -4,11 +4,10 @@
 User-agent: *
 Allow: /
 
-# Block only utility/redirect pages that should never be indexed
+# Block utility/redirect pages that should never be indexed
 Disallow: /index-redirect.html
-Disallow: /404.html
 
-# Allow all bots to crawl assets
+# Allow all bots to crawl assets and blog
 Allow: /assets/
 Allow: /blog/
 
