@@ -1917,7 +1917,410 @@
         <img src="assets/layout-map-hd.webp" alt="Omaxe Eternity 2 Vrindavan Layout Plan">
     </div>
 
+    <!-- ============================================================
+         NEW LAUNCH POPUPS — Omaxe Barsana → Omaxe Hathras
+         FIX: class-based show/hide (no !important conflict)
+    ============================================================ -->
 
+    <!-- POPUP 1: OMAXE BARSANA -->
+    <div id="nlp-barsana" class="nlp-wrap" role="dialog" aria-modal="true" aria-labelledby="nlp-barsana-title">
+        <div class="nlp-backdrop" id="nlp-bd-barsana"></div>
+        <div class="nlp-card nlp-gold">
+            <button class="nlp-x" id="nlp-x-barsana" aria-label="Close">&#10005;</button>
+            <div class="nlp-top nlp-top-gold">🚨 MOST AWAITED LAUNCH &nbsp;·&nbsp; OMAXE BARSANA</div>
+            <div class="nlp-body">
+                <div class="nlp-emoji">🦚</div>
+                <h3 class="nlp-h" id="nlp-barsana-title">Omaxe Barsana <span>Vrindavan</span></h3>
+                <p class="nlp-loc">📍 Raal Road, Barsana–Vrindavan Corridor, UP</p>
+                <div class="nlp-chips-label">📐 Plot Sizes Available</div>
+                <div class="nlp-chips">
+                    <span class="nlp-chip">120 Sq. Yd.</span>
+                    <span class="nlp-chip nlp-chip-star">160 Sq. Yd.<small>★ Most Popular</small></span>
+                    <span class="nlp-chip">200 Sq. Yd.</span>
+                </div>
+                <ul class="nlp-pts">
+                    <li>✅ Freehold Land — Own Freely</li>
+                    <li>✅ Gated Township · Wide Roads · Green Parks</li>
+                    <li>✅ 24/7 Security &amp; Modern Infrastructure</li>
+                    <li>⚡ Limited Plots — Book Now!</li>
+                </ul>
+                <div class="nlp-alert nlp-alert-gold">🔥 Inventory Moving Fast — Don't Miss Out!</div>
+                <div class="nlp-ctas">
+                    <a href="https://wa.me/919410856555?text=Hi%20Ashish%20Garg%2C%20I'm%20interested%20in%20Omaxe%20Barsana%20Vrindavan%20plots.%20Please%20share%20brochure%20and%20details." class="nlp-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+                    <a href="tel:+919410856555" class="nlp-call">📞 Call Now</a>
+                </div>
+                <p class="nlp-priv">🔒 100% Private · No Spam Ever</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP 2: OMAXE HATHRAS -->
+    <div id="nlp-hathras" class="nlp-wrap" role="dialog" aria-modal="true" aria-labelledby="nlp-hathras-title">
+        <div class="nlp-backdrop" id="nlp-bd-hathras"></div>
+        <div class="nlp-card nlp-teal">
+            <button class="nlp-x" id="nlp-x-hathras" aria-label="Close">&#10005;</button>
+            <div class="nlp-top nlp-top-teal">🚨 MOST AWAITED LAUNCH &nbsp;·&nbsp; OMAXE HATHRAS</div>
+            <div class="nlp-body">
+                <div class="nlp-emoji">🏡</div>
+                <h3 class="nlp-h" id="nlp-hathras-title">Omaxe City <span>Hathras, UP</span></h3>
+                <p class="nlp-loc">📍 Mathura–Bareilly Highway (NH-530B), Hathras</p>
+                <div class="nlp-chips-label">📐 Plot Sizes Available</div>
+                <div class="nlp-chips">
+                    <span class="nlp-chip nlp-chip-teal">160 Sq. Yd.</span>
+                    <span class="nlp-chip nlp-chip-teal nlp-chip-star">200 Sq. Yd.<small>★ Most Popular</small></span>
+                    <span class="nlp-chip nlp-chip-teal">250 Sq. Yd.</span>
+                </div>
+                <ul class="nlp-pts">
+                    <li>✅ Near Mathura, Agra &amp; Aligarh</li>
+                    <li>✅ Connectivity to Jewar (Noida) Airport</li>
+                    <li>✅ Green Belts · Wide Roads · 24/7 Security</li>
+                    <li>⚡ Phase 2 Open — Very Limited Inventory!</li>
+                </ul>
+                <div class="nlp-alert nlp-alert-teal">🔥 Phase 2 — Very Limited Plots Remaining!</div>
+                <div class="nlp-ctas">
+                    <a href="https://wa.me/919410856555?text=Hi%20Ashish%20Garg%2C%20I'm%20interested%20in%20Omaxe%20Hathras%20City%20plots.%20Please%20share%20brochure%20and%20details." class="nlp-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+                    <a href="tel:+919410856555" class="nlp-call">📞 Call Now</a>
+                </div>
+                <p class="nlp-priv">🔒 100% Private · No Spam Ever</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         POPUP STYLES — scoped with nlp- prefix
+    ============================================================ -->
+    <style>
+    /* --- Wrapper: hidden by default, shown via .nlp-show class --- */
+    .nlp-wrap {
+        display: none;          /* DEFAULT: hidden */
+        position: fixed;
+        inset: 0;
+        z-index: 100000;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+    }
+    .nlp-wrap.nlp-show {
+        display: flex;          /* SHOWN: class added by JS */
+    }
+
+    /* --- Semi-transparent backdrop (website visible behind) --- */
+    .nlp-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(5, 15, 30, 0.55);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        cursor: pointer;
+    }
+
+    /* --- Card --- */
+    .nlp-card {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 390px;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 2px 12px rgba(0,0,0,0.3);
+        animation: nlpIn .35s cubic-bezier(.34,1.56,.64,1) both;
+        max-height: 90vh;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+    .nlp-card::-webkit-scrollbar { display: none; }
+    .nlp-gold { background: linear-gradient(155deg, #0c1c38 0%, #1a3a5c 55%, #0e2445 100%); border: 1.5px solid rgba(246,201,14,0.4); }
+    .nlp-teal { background: linear-gradient(155deg, #051c18 0%, #0d3b30 55%, #062820 100%); border: 1.5px solid rgba(52,211,153,0.4); }
+
+    @keyframes nlpIn {
+        from { opacity:0; transform: translateY(24px) scale(.95); }
+        to   { opacity:1; transform: translateY(0) scale(1); }
+    }
+
+    /* --- Top ribbon --- */
+    .nlp-top {
+        padding: 7px 16px;
+        font-size: 10.5px;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .nlp-top-gold { background: linear-gradient(90deg,#b7791f,#d69e2e,#ecc94b,#d69e2e,#b7791f); color: #1a1a00; }
+    .nlp-top-teal { background: linear-gradient(90deg,#047857,#059669,#34d399,#059669,#047857); color: #002b1e; }
+
+    /* --- Close button --- */
+    .nlp-x {
+        position: absolute;
+        top: 42px; right: 12px;
+        width: 30px; height: 30px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: rgba(255,255,255,0.75);
+        font-size: 13px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+        transition: all .2s;
+        z-index: 10;
+        font-family: 'Inter', sans-serif;
+        line-height: 1;
+    }
+    .nlp-x:hover { background: rgba(255,255,255,0.25); color: #fff; transform: scale(1.1); }
+
+    /* --- Body --- */
+    .nlp-body {
+        padding: 16px 22px 18px;
+    }
+
+    /* --- Emoji --- */
+    .nlp-emoji {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 8px;
+        line-height: 1;
+    }
+
+    /* --- Heading --- */
+    .nlp-h {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 4px;
+        line-height: 1.25;
+    }
+    .nlp-h span { display: block; font-size: 1rem; color: #f6c90e; }
+    .nlp-teal .nlp-h span { color: #34d399; }
+
+    /* --- Location --- */
+    .nlp-loc {
+        text-align: center;
+        font-size: 0.76rem;
+        color: rgba(255,255,255,0.52);
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 14px;
+    }
+
+    /* --- Chips label --- */
+    .nlp-chips-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.45);
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 8px;
+    }
+
+    /* --- Plot size chips --- */
+    .nlp-chips {
+        display: flex;
+        gap: 7px;
+        margin-bottom: 14px;
+        flex-wrap: wrap;
+    }
+    .nlp-chip {
+        flex: 1;
+        min-width: 80px;
+        text-align: center;
+        padding: 8px 6px;
+        border-radius: 9px;
+        border: 1.5px solid rgba(246,201,14,0.4);
+        color: #f6c90e;
+        font-weight: 700;
+        font-size: 0.82rem;
+        font-family: 'Inter', sans-serif;
+        background: rgba(246,201,14,0.08);
+        line-height: 1.2;
+    }
+    .nlp-chip-teal { border-color: rgba(52,211,153,0.4); color: #34d399; background: rgba(52,211,153,0.08); }
+    .nlp-chip-star {
+        border-color: #f6c90e;
+        background: rgba(246,201,14,0.16);
+        box-shadow: 0 0 10px rgba(246,201,14,0.2);
+    }
+    .nlp-chip-teal.nlp-chip-star {
+        border-color: #34d399;
+        background: rgba(52,211,153,0.18);
+        box-shadow: 0 0 10px rgba(52,211,153,0.2);
+    }
+    .nlp-chip small {
+        display: block;
+        font-size: 8.5px;
+        font-weight: 800;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+        margin-top: 2px;
+        opacity: .85;
+    }
+
+    /* --- Bullet points --- */
+    .nlp-pts {
+        list-style: none;
+        padding: 0; margin: 0 0 12px;
+        display: grid; gap: 5px;
+    }
+    .nlp-pts li {
+        font-size: 0.79rem;
+        color: rgba(255,255,255,0.8);
+        font-family: 'Inter', sans-serif;
+        line-height: 1.4;
+    }
+
+    /* --- Alert bar --- */
+    .nlp-alert {
+        border-radius: 7px;
+        padding: 7px 12px;
+        text-align: center;
+        font-size: 0.78rem;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 12px;
+    }
+    .nlp-alert-gold {
+        background: rgba(220,38,38,0.12);
+        border: 1px solid rgba(220,38,38,0.35);
+        color: #fca5a5;
+    }
+    .nlp-alert-teal {
+        background: rgba(5,150,105,0.14);
+        border: 1px solid rgba(52,211,153,0.35);
+        color: #6ee7b7;
+    }
+
+    /* --- CTA buttons --- */
+    .nlp-ctas {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    .nlp-wa, .nlp-call {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 11px 10px;
+        border-radius: 50px;
+        font-size: 0.84rem;
+        font-weight: 700;
+        text-decoration: none !important;
+        font-family: 'Inter', sans-serif;
+        transition: transform .18s, box-shadow .18s;
+        border: none;
+        cursor: pointer;
+    }
+    .nlp-wa {
+        background: linear-gradient(135deg, #25d366, #128c5e);
+        color: #fff !important;
+        box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+    }
+    .nlp-wa:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.5); }
+    .nlp-call {
+        background: linear-gradient(135deg, #d69e2e, #f6c90e);
+        color: #1a2c00 !important;
+        box-shadow: 0 4px 14px rgba(246,201,14,0.3);
+    }
+    .nlp-call:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(246,201,14,0.45); }
+
+    /* --- Privacy note --- */
+    .nlp-priv {
+        text-align: center;
+        font-size: 0.68rem;
+        color: rgba(255,255,255,0.3);
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+    }
+
+    /* --- Mobile tweaks --- */
+    @media (max-width: 440px) {
+        .nlp-card { max-width: 100%; border-radius: 14px; }
+        .nlp-body { padding: 12px 16px 16px; }
+        .nlp-h { font-size: 1.15rem; }
+        .nlp-ctas { flex-direction: column; }
+        .nlp-chip { min-width: 70px; font-size: 0.76rem; }
+        .nlp-x { top: 38px; right: 10px; }
+    }
+    </style>
+
+    <!-- ============================================================
+         POPUP JAVASCRIPT — Fixed class-based show/hide
+    ============================================================ -->
+    <script>
+    (function () {
+        var POPUPS = ['barsana', 'hathras'];
+        var idx = 0;
+        var closing = false;
+
+        function show(id) {
+            var el = document.getElementById('nlp-' + id);
+            if (!el) return;
+            // Remove old animation so it replays
+            var card = el.querySelector('.nlp-card');
+            if (card) { card.style.animation = 'none'; card.offsetHeight; card.style.animation = ''; }
+            el.classList.add('nlp-show');
+            document.body.style.overflow = 'hidden';
+            closing = false;
+        }
+
+        function close(id) {
+            if (closing) return;
+            closing = true;
+            var el = document.getElementById('nlp-' + id);
+            if (!el) return;
+            var card = el.querySelector('.nlp-card');
+            if (card) {
+                card.style.transition = 'opacity .22s ease, transform .22s ease';
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(18px) scale(.96)';
+            }
+            setTimeout(function () {
+                el.classList.remove('nlp-show');
+                if (card) { card.style.opacity = ''; card.style.transform = ''; card.style.transition = ''; }
+                idx++;
+                if (idx < POPUPS.length) {
+                    show(POPUPS[idx]);
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }, 240);
+        }
+
+        // Expose globally
+        window.nlpClose = close;
+
+        // Wire up close buttons and backdrops
+        function wire() {
+            POPUPS.forEach(function (id) {
+                var xBtn = document.getElementById('nlp-x-' + id);
+                var bd   = document.getElementById('nlp-bd-' + id);
+                if (xBtn) xBtn.addEventListener('click', function (e) { e.stopPropagation(); close(id); });
+                if (bd)   bd.addEventListener('click', function () { close(id); });
+            });
+            // ESC key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && idx < POPUPS.length) close(POPUPS[idx]);
+            });
+        }
+
+        // Show first popup 1.4s after page load
+        if (document.readyState === 'complete') {
+            wire();
+            setTimeout(function () { show(POPUPS[0]); }, 1400);
+        } else {
+            window.addEventListener('load', function () {
+                wire();
+                setTimeout(function () { show(POPUPS[0]); }, 1400);
+            });
+        }
+    })();
+    </script>
 
     <script src="script.js" defer></script>
 </body>
