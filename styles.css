@@ -226,13 +226,15 @@ button {
 
 .nav {
     display: flex;
-    gap: 30px;
+    gap: 18px; /* Reduced from 30px to fit new links */
 }
 
 .nav a {
     font-weight: 500;
+    font-size: 14px; /* Slightly smaller to fit 10 items perfectly */
     color: var(--text-dark);
     transition: color 0.3s;
+    white-space: nowrap; /* Prevent "Plot Sizes" from breaking into two lines */
     text-underline-offset: 3px;
 }
 
