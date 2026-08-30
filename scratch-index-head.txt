@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        media="print" onload="this.media='all'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="4A5YwYXytEIcLAyao6LaeFeES6x9ME4Qu4dwcV0EEEw" />
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Omaxe Eternity 2 Vrindavan â€“ RERA Plots 120/160/200 Sq Yd | Call for Exclusive Price 2026</title>
+    <meta name="description"
+        content="Book RERA-registered residential plots in Omaxe Eternity 2 Vrindavan â€“ 120, 160 & 200 sq yard sizes. 15-20% annual appreciation. Limited plots available on Raal Road. Call or WhatsApp Ashish Garg for exclusive 2026 price & site visit.">
+    <meta name="keywords"
+        content="Omaxe Eternity 2 Vrindavan, Omaxe Eternity 2 Vrindavan price, Omaxe Eternity Vrindavan plot price, Omaxe Eternity 2 Vrindavan for sale, Omaxe Vrindavan price list 2026, Omaxe Eternity 2 Vrindavan reviews, Omaxe Eternity Vrindavan prices, Omaxe Eternity 2 plot price per square yard, Omaxe Eternity Vrindavan, Vrindavan plots for sale 2026, RERA registered plots Vrindavan, plots near Banke Bihari Temple Vrindavan, plots near Prem Mandir Vrindavan, retirement home Vrindavan, NRI investment plots Vrindavan, buy plot in Vrindavan 2026, weekend home Vrindavan plot, Raal Road plots Vrindavan">
+    <meta name="author" content="Ashish Garg - Authorized Channel Partner">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://omaxeeternity2.in/">
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Omaxe Eternity 2 Vrindavan â€“ RERA Plots | Limited Availability | Book Site Visit 2026">
+    <meta property="og:description"
+        content="Invest in RERA-registered residential plots in Vrindavan. 120/160/200 sq. yard options from Omaxe Limited. 15-20% annual appreciation projected. Call Ashish Garg for exclusive price & free site visit.">
+    <meta property="og:image"
+        content="https://omaxeeternity2.in/assets/omaxe-eternity-2-vrindavan-luxury-apartments-night-view.webp">
+    <meta property="og:image:alt" content="Omaxe Eternity 2 Vrindavan â€“ Premium Residential Township Night View">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://omaxeeternity2.in/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Omaxe Eternity 2 Vrindavan">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Omaxe Eternity 2 Vrindavan â€“ RERA Plots | Limited Plots Available | Book Free Site Visit">
+    <meta name="twitter:description"
+        content="Premium RERA-registered plots in Vrindavan â€“ 120/160/200 sq.yard. 49.1 acres township by Omaxe Limited. 15-20% appreciation. Call Ashish Garg for exclusive price & site visit.">
+    <meta name="twitter:image"
+        content="https://omaxeeternity2.in/assets/omaxe-eternity-2-vrindavan-luxury-apartments-night-view.webp">
+    <meta name="twitter:image:alt" content="Omaxe Eternity 2 Vrindavan â€“ Premium Residential Plots on Raal Road">
+
+    <link rel="preload" as="image" href="assets/omaxe-eternity-2-vrindavan-luxury-apartments-night-view.webp">
+    <link rel="preload" as="image" href="assets/layout-map-hd.webp">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JSON-LD Structured Data: RealEstateAgent -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Ashish Garg - Omaxe Eternity 2 Vrindavan",
+        "description": "Authorized channel partner for Omaxe Eternity 2 plots in Vrindavan. We provide site visit coordination, availability checks, and documentation guidance.",
+        "url": "https://omaxeeternity2.in/",
+        "telephone": "+919410856555",
+        "email": "ashishjigarg@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Raal Road (Radha Kund Road)",
+            "addressLocality": "Vrindavan",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "281121",
+            "addressCountry": "IN"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Vrindavan, Uttar Pradesh"
+        },
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "47",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "09:00",
+            "closes": "21:00"
+        }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: WebSite + SearchAction -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Omaxe Eternity 2 Vrindavan",
+        "url": "https://omaxeeternity2.in/",
+        "description": "Authorized channel partner for Omaxe Eternity 2 Vrindavan â€“ RERA registered residential plots for sale in 120, 160, 200 sq yard sizes.",
+        "inLanguage": "en-IN",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://omaxeeternity2.in/blog?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://omaxeeternity2.in/#organization",
+        "name": "Omaxe Eternity 2 Vrindavan â€“ Ashish Garg Channel Partner",
+        "url": "https://omaxeeternity2.in/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://omaxeeternity2.in/assets/logo.webp",
+            "width": 200,
+            "height": 60
+        },
+        "description": "Authorized channel partner for Omaxe Eternity 2, a RERA-registered residential plot township in Vrindavan, UP.",
+        "telephone": "+919410856555",
+        "email": "ashishjigarg@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Raal Road (Radha Kund Road)",
+            "addressLocality": "Vrindavan",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "281121",
+            "addressCountry": "IN"
+        },
+        "areaServed": "Vrindavan, Mathura, Uttar Pradesh",
+        "knowsAbout": ["Omaxe Eternity 2 Vrindavan", "Residential Plots Vrindavan", "RERA Registered Plots UP", "Vrindavan Real Estate"]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What plot sizes are available?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer three plot sizes: 120 sq. yard, 160 sq. yard, and 200 sq. yard. Each size is designed to meet different requirements from compact homes to premium residences."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the price per sq. yard?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Prices vary based on plot location and size. Please contact us on WhatsApp or call for the latest prices and any ongoing offers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is the project RERA registered?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Omaxe Eternity 2 Phase 1 is RERA registered. UP RERA Registration No: UPRERAPRJ141620/12/2025. Registration Date: 24-12-2025. Declared Completion Date: 07-05-2030."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I visit the site before booking?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely! We encourage site visits. Contact us to schedule a free guided site visit at your convenient time."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the payment options?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer flexible payment plans including down payment options and construction-linked plans. Bank loan assistance is also available."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How far is it from Delhi?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vrindavan is approximately 150 km from Delhi, easily accessible via Yamuna Expressway with a drive time of about 2-2.5 hours."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this the official Omaxe website?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, this website is operated by an authorized channel partner. For official information, please visit the developer's official website."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the RERA registration number of Omaxe Eternity 2 Vrindavan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Omaxe Eternity 2 Phase 1 is registered under UP RERA with registration number UPRERAPRJ141620/12/2025. Registration date: 24 December 2025. Declared completion date: 07 May 2030. You can verify this on the official UP RERA website."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the possession date of Omaxe Eternity 2 Vrindavan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The declared completion date as per UP RERA registration is 07 May 2030. Omaxe Eternity 2 Phase 1 was RERA registered on 24 December 2025."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is Omaxe Eternity 2 located in Vrindavan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Omaxe Eternity 2 is located on Raal Road (also known as Radha Kund Road) in Vrindavan, Uttar Pradesh â€“ PIN 281121. It is approximately 150 km from Delhi NCR via Yamuna Expressway and very close to several prominent temples."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many plots are there in Omaxe Eternity 2 Phase 1?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Omaxe Eternity 2 Phase 1 spans 49.1 acres and includes approximately 786 residential plots in sizes of 120, 160, and 200 sq. yard. Over 750 units were sold at launch, making it one of the fastest-selling projects in Vrindavan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is bank loan available for plots in Omaxe Eternity 2 Vrindavan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, bank loan assistance is available for plots in Omaxe Eternity 2 Vrindavan. Being a RERA-registered project, most leading banks including SBI, HDFC, ICICI and Axis Bank are likely to offer home/plot loans. Contact us for current loan tie-up information."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What documents are required to book a plot in Omaxe Eternity 2?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To book a plot in Omaxe Eternity 2 Vrindavan, you typically need: (1) PAN Card, (2) Aadhaar Card / Passport, (3) Recent passport-size photographs, (4) Address proof, (5) Bank cheque / DD for booking amount. We guide you through the full documentation process."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are there commercial shops available in Omaxe Eternity 2 Vrindavan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Omaxe Eternity 2 launched Premium Society Shops (sizes 170 to 628 sq. ft.) but due to unprecedented demand, all 26 units are currently 100% SOLD OUT. However, you can contact us to inquire about potential resale opportunities or upcoming commercial phases."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the size of society shops in Omaxe Eternity 2?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Premium Society Shops in Omaxe Eternity 2 Vrindavan are available in sizes ranging from 170 sq. ft. to 628 sq. ft. All 26 units are located on prime 24m and 18m wide roads within the luxury integrated township. Call or WhatsApp for the floor plan and payment plan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why invest in society shops at Omaxe Eternity 2 Vrindavan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Society Shops at Omaxe Eternity 2 offer a built-in customer base: they are surrounded by premium residences, a hotel, a school, a world-class clubhouse and lush parks. They are also strategically close to major Vrindavan temples and essential hospitals â€“ ensuring extremely high daily footfall. With only 26 units available, this is a rare commercial investment opportunity in one of India's most sought-after spiritual and real estate destinations."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: RealEstateListing -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateListing",
+        "name": "Omaxe Eternity 2 Vrindavan â€“ Premium Residential Plots",
+        "description": "RERA-registered residential plots in Omaxe Eternity 2 township, Raal Road, Vrindavan. Available in 120, 160, and 200 sq. yard sizes. 15-20% annual appreciation. 750+ units sold at launch.",
+        "url": "https://omaxeeternity2.in/",
+        "datePosted": "2026-01-15",
+        "image": "https://omaxeeternity2.in/assets/layout-map-hd.webp",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/LimitedAvailability",
+            "offerCount": "3"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Raal Road (Radha Kund Road)",
+            "addressLocality": "Vrindavan",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "281121",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "27.5829",
+            "longitude": "77.6411"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo"><img src="assets/logo.webp" alt="Omaxe" width="200" height="60"></a>
+            <nav class="nav">
+                <a href="/about">About</a>
+                <a href="/amenities">Amenities</a>
+                <a href="/location">Location</a>
+                <a href="/plot-sizes">Plot Sizes</a>
+                <a href="/price-details">Pricing</a>
+                <a href="/gallery">Gallery</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+            </nav>
+            <div class="header-cta">
+                <a href="tel:+919410856555" class="btn btn-call">ðŸ“ž Call Now</a>
+                <a href="https://wa.me/919410856555?text=Hi%20Ashish%20Garg%2C%20I'm%20interested%20in%20plots%20in%20Vrindavan.%20Please%20share%20details."
+                    class="btn btn-whatsapp">ðŸ’¬ WhatsApp</a>
+            </div>
+            <button class="mobile-menu-btn">â˜°</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="home">
+            <div class="hero-container hero-container-split">
+                <!-- Left: Text Content -->
+                <div class="hero-content">
+                    <div class="hero-badge">ðŸ¡ RERA Registered Plots in Vrindavan | Raal Road &nbsp;â€¢&nbsp; <span style="color:#f6c90e;font-weight:700;">ðŸ“Š Limited Plots Available â€“ Call for Price</span></div>
+                    <h1>Omaxe Eternity 2 <span class="hero-highlight">Vrindavan</span> â€“ RERA Registered Plots for Sale
+                    </h1>
+                    <p>Secure a <strong>Premium RERA-registered investment plot in <a href="/about"
+                                style="color:inherit;text-decoration:underline dotted;text-underline-offset:3px;">Omaxe
+                                Eternity
+                                2 Vrindavan</a></strong> â€“ 120, 160 &amp; 200 sq yard options tailored for serious investors. Benefit from <strong>15-20% annual capital appreciation</strong>, 45m wide master roads, and world-class amenities. <a href="/price-details"
+                            style="color:inherit;text-decoration:underline dotted;text-underline-offset:3px;">Get 2026 price list</a> &amp; book your site visit today.</p>
+                    <div class="hero-ctas">
+                        <a href="https://wa.me/919410856555?text=Hi%20Ashish%20Garg%2C%20I'm%20interested%20in%20plots%20in%20Vrindavan.%20Please%20share%20price%20and%20layout%20plan."
+                            class="btn btn-whatsapp">ðŸ’¬ Get Price &amp; Layout on WhatsApp</a>
+                        <a href="tel:+919410856555" class="btn btn-call">ðŸ“ž Call Now</a>
+                    </div>
+                    <div class="hero-trust">
+                        <span>âœ… Limited Plots</span>
+                        <span>ðŸš— Site Visit Available</span>
+                        <span>âš¡ Quick Assistance</span>
+                    </div>
+                </div>
+
+                <!-- Right: Hero Lead Form -->
+                <div class="hero-lead-form-wrap">
+                    <div class="hero-lead-form-box">
+                        <div class="hero-lead-form-header">
+                            <span class="hero-lead-form-tag">ðŸ“‹ FREE Price List &amp; Brochure</span>
+                            <h3 class="hero-lead-form-title">Get Exclusive 2026 Offer</h3>
+                            <p class="hero-lead-form-sub">Fill below â€“ we call back in 30 minutes</p>
+                        </div>
+                        <form id="heroLeadForm" class="hero-lead-form" novalidate>
+                            <div class="hlf-group">
+                                <input type="text" id="hlf-name" name="name" placeholder="Your Full Name *" required autocomplete="name">
+                            </div>
+                            <div class="hlf-group">
+                                <input type="tel" id="hlf-phone" name="phone" placeholder="Phone / WhatsApp Number *" required autocomplete="tel" pattern="[6-9][0-9]{9}">
+                            </div>
+                            <div class="hlf-group">
+                                <select id="hlf-plot" name="plotSize">
+                                    <option value="">Plot Size (Optional)</option>
+                                    <option value="120 Sq. Yard">120 Sq. Yard</option>
+                                    <option value="160 Sq. Yard">160 Sq. Yard</option>
+                                    <option value="200 Sq. Yard">200 Sq. Yard</option>
+                                    <option value="Not decided">Not Decided Yet</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="hlf-submit" id="hlf-submit-btn">
+                                ðŸ”“ Get Price List &amp; Call Back â†’
+                            </button>
+                        </form>
+                        <div id="heroLeadSuccess" class="hlf-success" style="display:none;">
+                            <div class="hlf-success-icon">âœ…</div>
+                            <h4>Thank You!</h4>
+                            <p>We'll call you within 30 minutes.<br>For instant help:</p>
+                            <a href="https://wa.me/919410856555?text=Hi%20Ashish%20Garg%2C%20I%20just%20submitted%20my%20details%20for%20Omaxe%20Eternity%202%20plots.%20Please%20share%20the%20price%20list." class="btn btn-whatsapp" style="width:100%;justify-content:center;margin-top:8px;">ðŸ’¬ Chat on WhatsApp Now</a>
+                        </div>
+                        <p class="hlf-privacy">ðŸ”’ 100% Private. No spam ever.</p>
+                        <div class="hlf-trust-row">
+                            <span>â­ 4.9/5 Rating</span>
+                            <span>â€¢</span>
+                            <span>RERA âœ…</span>
+                        </div>

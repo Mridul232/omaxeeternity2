@@ -1,0 +1,200 @@
+﻿        flex: 1;
+        min-width: 80px;
+        text-align: center;
+        padding: 8px 6px;
+        border-radius: 9px;
+        border: 1.5px solid rgba(246,201,14,0.4);
+        color: #f6c90e;
+        font-weight: 700;
+        font-size: 0.82rem;
+        font-family: 'Inter', sans-serif;
+        background: rgba(246,201,14,0.08);
+        line-height: 1.2;
+    }
+    .nlp-chip-teal { border-color: rgba(52,211,153,0.4); color: #34d399; background: rgba(52,211,153,0.08); }
+    .nlp-chip-star {
+        border-color: #f6c90e;
+        background: rgba(246,201,14,0.16);
+        box-shadow: 0 0 10px rgba(246,201,14,0.2);
+    }
+    .nlp-chip-teal.nlp-chip-star {
+        border-color: #34d399;
+        background: rgba(52,211,153,0.18);
+        box-shadow: 0 0 10px rgba(52,211,153,0.2);
+    }
+    .nlp-chip small {
+        display: block;
+        font-size: 8.5px;
+        font-weight: 800;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+        margin-top: 2px;
+        opacity: .85;
+    }
+
+    /* --- Bullet points --- */
+    .nlp-pts {
+        list-style: none;
+        padding: 0; margin: 0 0 12px;
+        display: grid; gap: 5px;
+    }
+    .nlp-pts li {
+        font-size: 0.79rem;
+        color: rgba(255,255,255,0.8);
+        font-family: 'Inter', sans-serif;
+        line-height: 1.4;
+    }
+
+    /* --- Alert bar --- */
+    .nlp-alert {
+        border-radius: 7px;
+        padding: 7px 12px;
+        text-align: center;
+        font-size: 0.78rem;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 12px;
+    }
+    .nlp-alert-gold {
+        background: rgba(220,38,38,0.12);
+        border: 1px solid rgba(220,38,38,0.35);
+        color: #fca5a5;
+    }
+    .nlp-alert-teal {
+        background: rgba(5,150,105,0.14);
+        border: 1px solid rgba(52,211,153,0.35);
+        color: #6ee7b7;
+    }
+
+    /* --- CTA buttons --- */
+    .nlp-ctas {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    .nlp-wa, .nlp-call {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 11px 10px;
+        border-radius: 50px;
+        font-size: 0.84rem;
+        font-weight: 700;
+        text-decoration: none !important;
+        font-family: 'Inter', sans-serif;
+        transition: transform .18s, box-shadow .18s;
+        border: none;
+        cursor: pointer;
+    }
+    .nlp-wa {
+        background: linear-gradient(135deg, #25d366, #128c5e);
+        color: #fff !important;
+        box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+    }
+    .nlp-wa:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.5); }
+    .nlp-call {
+        background: linear-gradient(135deg, #d69e2e, #f6c90e);
+        color: #1a2c00 !important;
+        box-shadow: 0 4px 14px rgba(246,201,14,0.3);
+    }
+    .nlp-call:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(246,201,14,0.45); }
+
+    /* --- Privacy note --- */
+    .nlp-priv {
+        text-align: center;
+        font-size: 0.68rem;
+        color: rgba(255,255,255,0.3);
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+    }
+
+    /* --- Mobile tweaks --- */
+    @media (max-width: 440px) {
+        .nlp-card { max-width: 100%; border-radius: 14px; }
+        .nlp-body { padding: 12px 16px 16px; }
+        .nlp-h { font-size: 1.15rem; }
+        .nlp-ctas { flex-direction: column; }
+        .nlp-chip { min-width: 70px; font-size: 0.76rem; }
+        .nlp-x { top: 38px; right: 10px; }
+    }
+    </style>
+
+    <!-- ============================================================
+         POPUP JAVASCRIPT â€” Fixed class-based show/hide
+    ============================================================ -->
+    <script>
+    (function () {
+        var POPUPS = ['barsana', 'hathras'];
+        var idx = 0;
+        var closing = false;
+
+        function show(id) {
+            var el = document.getElementById('nlp-' + id);
+            if (!el) return;
+            // Remove old animation so it replays
+            var card = el.querySelector('.nlp-card');
+            if (card) { card.style.animation = 'none'; card.offsetHeight; card.style.animation = ''; }
+            el.classList.add('nlp-show');
+            document.body.style.overflow = 'hidden';
+            closing = false;
+        }
+
+        function close(id) {
+            if (closing) return;
+            closing = true;
+            var el = document.getElementById('nlp-' + id);
+            if (!el) return;
+            var card = el.querySelector('.nlp-card');
+            if (card) {
+                card.style.transition = 'opacity .22s ease, transform .22s ease';
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(18px) scale(.96)';
+            }
+            setTimeout(function () {
+                el.classList.remove('nlp-show');
+                if (card) { card.style.opacity = ''; card.style.transform = ''; card.style.transition = ''; }
+                idx++;
+                if (idx < POPUPS.length) {
+                    show(POPUPS[idx]);
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }, 240);
+        }
+
+        // Expose globally
+        window.nlpClose = close;
+
+        // Wire up close buttons and backdrops
+        function wire() {
+            POPUPS.forEach(function (id) {
+                var xBtn = document.getElementById('nlp-x-' + id);
+                var bd   = document.getElementById('nlp-bd-' + id);
+                if (xBtn) xBtn.addEventListener('click', function (e) { e.stopPropagation(); close(id); });
+                if (bd)   bd.addEventListener('click', function () { close(id); });
+            });
+            // ESC key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && idx < POPUPS.length) close(POPUPS[idx]);
+            });
+        }
+
+        // Show first popup 1.4s after page load
+        if (document.readyState === 'complete') {
+            wire();
+            setTimeout(function () { show(POPUPS[0]); }, 1400);
+        } else {
+            window.addEventListener('load', function () {
+                wire();
+                setTimeout(function () { show(POPUPS[0]); }, 1400);
+            });
+        }
+    })();
+    </script>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
